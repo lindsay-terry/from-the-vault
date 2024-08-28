@@ -3,18 +3,33 @@ import { Link } from 'react-router-dom';
 
 export default function Nav() {
     return (
-    //   <Navbar
-    <>
-
-        links={[
-          <Link key={1} className="" to="/">
-            Home
-          </Link>,
-          <Link key={2} className="" to="/about">
-            About Me
-          </Link>,
-        ]}
-    </>
-    //   />
+        <nav>
+            <div>
+                <div>
+                    <ul>
+                        <li>
+                            <Link to="/">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/about">
+                                About Me
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/portfolio">
+                                Portfolio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                Contact Me
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     );
   }
