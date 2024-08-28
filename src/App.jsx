@@ -1,11 +1,15 @@
-
+import { Outlet } from 'react-router-dom';
 import './App.css'
 
 function App() {
   
 
   return (
-    <p> App</p>
+    <>
+    <main>
+      <Outlet />
+    </main>
+    </>
   )
 }
 
