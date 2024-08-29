@@ -24,24 +24,24 @@ export default function Nav() {
 
     return (
         <nav className="" style={styles.customBackground}>
-                <div className="container">
-                    <ul className="d-flex justify-content-evenly">
-                        <li className="m-3">
+                <div className="">
+                    <ul className="">
+                        <li className="">
                             <Link to="/" style={styles.customLink} >
                                 About
                             </Link>
                         </li>
-                        <li className="m-3">
+                        <li className="">
                             <Link to="/portfolio" style={styles.customLink}>
                                 Portfolio
                             </Link>
                         </li>
-                        <li className="m-3">
+                        <li className="">
                             <Link to="/contact" style={styles.customLink}>
                                 Contact Me
                             </Link>
                         </li>
-                        <li className="m-3">
+                        <li className="">
                             <Link to="/resume" style={styles.customLink}>
                                 Resume
                             </Link>
