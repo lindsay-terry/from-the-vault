@@ -1,9 +1,9 @@
-import ContactIcons from './ContactIcons'
+import ContactIcons from './ContactIcons';
 
 export default function Footer() {
 
     return (
-        <footer className="footer py-3 mt-auto">
+        <footer>
             <container>
                 <ContactIcons />
             </container>
