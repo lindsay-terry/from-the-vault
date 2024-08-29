@@ -1,20 +1,31 @@
 /* Color variables used throughout  */
 :root{
---cordovan: #81393Cff;
+/* --cordovan: #81393Cff;
 --burnt-sienna: #ED7453ff;
 --eggplant: #5C4A55ff;
 --persian-red: #B73A34ff;
---raw-umber: #90634Cff;
---rich-black: rgb(2, 2, 7);
+--raw-umber: #90634Cff; */
+--chrysler-blue: #5F02CCff;
+--black: #00000Aff;
+--medium-blue: #2500C4ff;
+--duke-blue: #00009Bff;
+--thistle: #E5D4FAff;
+--white: #FFFFFFff;
+--magnolia: #F9F0FDff;
+--navy-blue: #000177ff;
+--blue-violet: #8635EAff;
+
 }
 
 /* Background image for application  */
 body {
-  background-image: url('./images/air.jpg');
-  background-color: var(--persian-red);
+  background-image: url('./images/lamp.jpg');
+  background-color: var(--duke-blue);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  font-family: "Oxygen", sans-serif;
 }
 
+/* font-family: "Oxygen", sans-serif; */

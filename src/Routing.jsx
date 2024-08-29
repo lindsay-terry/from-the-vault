@@ -2,10 +2,10 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import Error from './endpoints/Error';
-import Home from './endpoints/Home';
 import About from './endpoints/About';
 import Contact from './endpoints/Contact';
 import Portfolio from './endpoints/Portfolio';
+import Resume from './endpoints/Resume';
 
 const router = createBrowserRouter([
     {
@@ -15,10 +15,6 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />,
-            },
-            {
-                path: '/about',
                 element: <About />,
             },
             {
@@ -28,7 +24,11 @@ const router = createBrowserRouter([
             {
                 path: '/portfolio',
                 element: <Portfolio />,
-            }
+            },
+            {
+                path: '/resume',
+                element: <Resume />,
+            },
         ],
     },
 ]);
