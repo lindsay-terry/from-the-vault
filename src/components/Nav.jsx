@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
+import { Tabs, TabList, Tab, Flex } from '@chakra-ui/react'
 
 export default function Nav() {
-    // const currentPage = useLocation().pathname;
 
     const styles = {
         customBackground: {
             background: 'var(--black)',
-            opacity: '0.65'
+            opacity: '0.55'
         },
 
         customLink: {
@@ -16,38 +16,34 @@ export default function Nav() {
             fontSize: '24px',
             fontFamily: 'Viga, sans-serif',
         },
-
-        selectedLink: {
-            fontSize: '28px',
-        }
     }
 
     return (
-        <nav className="" style={styles.customBackground}>
-                <div className="container">
-                    <ul className="d-flex justify-content-evenly">
-                        <li className="m-3">
-                            <Link to="/" style={styles.customLink} >
-                                About
-                            </Link>
-                        </li>
-                        <li className="m-3">
-                            <Link to="/portfolio" style={styles.customLink}>
-                                Portfolio
-                            </Link>
-                        </li>
-                        <li className="m-3">
-                            <Link to="/contact" style={styles.customLink}>
-                                Contact Me
-                            </Link>
-                        </li>
-                        <li className="m-3">
-                            <Link to="/resume" style={styles.customLink}>
-                                Resume
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
+        <Tabs>
+            <TabList style={styles.customBackground}>
+                <Flex justify="space-evenly" p={3} w="100%">
+                <Tab>
+                    <Link to="/" style={styles.customLink} >
+                    About
+                    </Link>
+                </Tab>
+                <Tab>
+                    <Link to="/portfolio" style={styles.customLink}>
+                        Portfolio
+                    </Link>
+                </Tab>
+                <Tab>
+                    <Link to="/contact" style={styles.customLink}>
+                        Contact Me
+                    </Link>
+                </Tab>
+                <Tab>
+                    <Link to="/resume" style={styles.customLink}>
+                        Resume
+                    </Link>
+                </Tab>
+                </Flex>
+            </TabList>
+        </Tabs>
     );
-  }
+  };

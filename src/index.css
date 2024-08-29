@@ -1,10 +1,5 @@
 /* Color variables used throughout  */
 :root{
-/* --cordovan: #81393Cff;
---burnt-sienna: #ED7453ff;
---eggplant: #5C4A55ff;
---persian-red: #B73A34ff;
---raw-umber: #90634Cff; */
 --chrysler-blue: #5F02CCff;
 --black: #00000Aff;
 --medium-blue: #2500C4ff;
@@ -16,17 +11,3 @@
 --blue-violet: #8635EAff;
 
 }
-
-/* Background image for application  */
-body {
-  background-image: url('./images/lamp.jpg');
-  background-color: var(--duke-blue);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  font-family: "Oxygen", sans-serif;
-  font-size: 18px;
-}
-
-/* font-family: "Oxygen", sans-serif; */
