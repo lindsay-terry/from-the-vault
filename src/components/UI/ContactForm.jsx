@@ -1,28 +1,75 @@
-import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Textarea, Container, Button } from '@chakra-ui/react';
+import { FormControl, FormLabel, FormErrorMessage, Input, Textarea, Container, Button, Grid } from '@chakra-ui/react';
+import { Form } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function ContactForm() {
-    const [input, setInput] = useState('');
-    const [name, setName] = useState('');
-    const [message, setMessage] = useState('');
+    const initialFormData = {
+        name: '',
+        email: '',
+        message: '',
+      };
+    // useState for form
+    const [formData, setFormData] = useState(initialFormData);
 
-    const handleInputChange = (event) => setInput(event.target.value);
-    const handleNameChange = (event) => setName(event.target.value);
-    const handleMessageChange = (event) => setMessage(event.target.value);
+    // useState for form errors
+    const [errors, setError] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    // handle changes in form
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleValidate = () => {
+        const newError = {};
+        if (!formData.name) newError.name = 'Name is required';
+        if (!formData.email) newError.email = 'Email is required';
+        if (!formData.message) newError.message = 'Message is required';
+        setError(newError);
+        
+        return Object.keys(newError).length === 0;
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (handleValidate()) {
+            console.log('Form submitted:', formData);
+            setFormData(initialFormData);
+        }
+    };
 
     return (
         <Container my={2}>
-            <FormControl>
-                <FormLabel m={1} color='var(--magnolia)'>Name</FormLabel>
-                <Input type='text' value={name} variant='filled' onChange={handleNameChange} m={1} />
+            <Form onSubmit={handleSubmit}>
+                <FormControl isInvalid={!!errors.name} mb={3}>
+                    <FormLabel color='var(--magnolia)'>Name:</FormLabel>
+                    <Input type='text' value={formData.name} name='name' onChange={handleChange} background/>
+                    <FormErrorMessage>{errors.name}</FormErrorMessage>
+                </FormControl>
+                <FormControl isInvalid={!!errors.email} mb={3}>
+                    <FormLabel color='var(--magnolia)'>Email:</FormLabel>
+                    <Input type='email' value={formData.email} name='email' onChange={handleChange} background/>
+                    <FormErrorMessage>{errors.email}</FormErrorMessage>
+                </FormControl>
+                <FormControl isInvalid={!!errors.message} mb={3}>
+                    <FormLabel color='var(--magnolia)' >Message:</FormLabel>
+                    <Textarea placeholder="What can I do for you?" value={formData.message} name='message' onChange={handleChange} background/>
+                    <FormErrorMessage>{errors.message}</FormErrorMessage>
+                </FormControl>
+                <Grid templateColumns='repeat(2, 1fr)' gap={3}>
+                    <Button type='submit'>Submit</Button>
+                    <Button>See My Info</Button>
+                </Grid>
 
-                <FormLabel m={1} color='var(--magnolia)'>Email address</FormLabel>
-                <Input type='email' value={input} variant='filled' onChange={handleInputChange} m={1} />
-
-                <FormLabel m={1} color='var(--magnolia)'>Message</FormLabel>
-                <Textarea value={message} placeholder='What can I do for you?' size='md' variant='filled' onChange={handleMessageChange} m={1} />
-                <Button m={2}>Submit</Button>
-            </FormControl>
+            </Form>
+            
         </Container>
     );
 };

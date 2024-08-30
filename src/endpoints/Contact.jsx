@@ -1,4 +1,4 @@
-import ContactForm from '../components/UI/ContactForm';
+import ContactBox from '../components/ContactBox';
 import { Container } from '@chakra-ui/react';
 
 export default function Contact() {
@@ -13,9 +13,7 @@ export default function Contact() {
 
     return (
         <Container p={7} my={2} style={styles.customBackground}>
-            <ContactForm />
-
-            {/* </ContactForm> */}
+            <ContactBox />
         </Container>
     );
 }
