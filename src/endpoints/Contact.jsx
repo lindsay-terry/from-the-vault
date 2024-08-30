@@ -1,12 +1,21 @@
+import ContactForm from '../components/UI/ContactForm';
+import { Container } from '@chakra-ui/react';
+
 export default function Contact() {
-    // const styles = {
-    //     home: {
-    //         // background: 'black',
-    //     },
-    // }
+
+    const styles = {
+        customBackground: {
+            background: 'var(--black)',
+            opacity: '0.85',
+            borderRadius: '30px'
+        }
+    }
+
     return (
-        <div>
-            <p>Contact page</p>
-        </div>
+        <Container p={7} my={2} style={styles.customBackground}>
+            <ContactForm />
+
+            {/* </ContactForm> */}
+        </Container>
     );
 }
