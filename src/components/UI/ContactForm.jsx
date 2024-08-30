@@ -1,8 +1,9 @@
 import { FormControl, FormLabel, FormErrorMessage, Input, Textarea, Container, Button, Grid } from '@chakra-ui/react';
 import { Form } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-export default function ContactForm() {
+export default function ContactForm({ setContactView }) {
     const initialFormData = {
         name: '',
         email: '',
@@ -27,6 +28,12 @@ export default function ContactForm() {
         });
     };
 
+    // Change view state to render contact card
+    const changeView = () => {
+        setContactView('contactInfo')
+    }
+
+    // Validate form elements to ensure they are filled out
     const handleValidate = () => {
         const newError = {};
         if (!formData.name) newError.name = 'Name is required';
@@ -37,6 +44,7 @@ export default function ContactForm() {
         return Object.keys(newError).length === 0;
     };
 
+    // Handle form submission -- for now just console.log data
     const handleSubmit = (event) => {
         event.preventDefault();
         if (handleValidate()) {
@@ -65,11 +73,14 @@ export default function ContactForm() {
                 </FormControl>
                 <Grid templateColumns='repeat(2, 1fr)' gap={3}>
                     <Button type='submit'>Submit</Button>
-                    <Button>See My Info</Button>
+                    <Button onClick={changeView}>See My Info</Button>
                 </Grid>
-
             </Form>
-            
         </Container>
     );
+};
+
+// Using propTypes on setContactView to ensure it is a function and that it is provided
+ContactForm.propTypes = {
+    setContactView: PropTypes.func.isRequired,
 };
