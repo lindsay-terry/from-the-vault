@@ -16,20 +16,23 @@ export default function Portfolio() {
         {
             projectTitle: 'The Stock-Ness Monster', 
             imageSrc: '/images/stockness.png', 
-            projectDescription: 'An inventory management application designed to maintain data integrity.',
-            link: 'https://github.com/lindsay-terry/stock-ness-monster',
+            projectDescription: 'An inventory and small business management application utilizing Handlebars.js for templating, Express.js for routing, and Sequelize to connect with a PostgreSQL database.',
+            githubLink: 'https://github.com/lindsay-terry/stock-ness-monster',
+            deployedLink : '#',
         },
         {
             projectTitle: 'Blog City Tech',
             imageSrc: '/images/blogcitytech.png',
             projectDescription: 'A CMS-style blog site utilizing the MVC paradigm, Handlebars.js for templating, Express.js for API routes, and Sequelize to connect with a PostgreSQL database.',
-            link: 'https://github.com/lindsay-terry/blog-city-tech'
+            githubLink: 'https://github.com/lindsay-terry/blog-city-tech',
+            deployedLink : '#',
         },
         {
             projectTitle: "What's for Dinner?",
             imageSrc: '/images/whatsfordinner.png',
-            projectDescription: 'A front-end application using two server-side APIs to generate meal and drink recipes.',
-            link: 'https://github.com/lindsay-terry/whats-for-dinner'
+            projectDescription: 'A front-end application using two server-side APIs to generate meal and drink recipes.  Utilizes local storage to save and delete saved meal and drink recipes..',
+            githubLink: 'https://github.com/lindsay-terry/whats-for-dinner',
+            deployedLink : 'https://lindsay-terry.github.io/whats-for-dinner/',
         }
     ];
 
