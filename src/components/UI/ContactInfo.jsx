@@ -1,6 +1,8 @@
 import ContactIcons from './ContactIcons';
 import PropTypes from 'prop-types';
 import { Box, Button, Container, Flex, Card, CardHeader, CardBody, Heading, Text } from '@chakra-ui/react';
+import { FaPhone } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function ContactInfo({ setContactView }) {
 
@@ -18,12 +20,12 @@ export default function ContactInfo({ setContactView }) {
                             <Heading size='sm'>Contact Me</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Box>
-                                <Heading size='xs'>Phone:</Heading>
+                            <Box display='flex'>
+                                <Heading size='xs'><FaPhone /></Heading>
                                 <Text p='2' fontSize='sm'>801-652-2807</Text>
                             </Box>
-                            <Box>
-                                <Heading size='xs'>Email:</Heading>
+                            <Box display='flex'>
+                                <Heading size='xs'><MdEmail /></Heading>
                                 <Text p='2' fontSize='sm'>lindsaytee66@gmail.com</Text>
                             </Box>
                         </CardBody>
