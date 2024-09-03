@@ -12,6 +12,21 @@ const theme = extendTheme({
       },
     },
   },
+  components: {
+    Button: {
+      variants: {
+        ghost: {
+          _hover: {
+            bg: 'var(--bittersweet)',
+            color: 'var(--honeydew)',
+          },
+          _focus: {
+            bowShadow: 'outline',
+          }
+        }
+      }
+    }
+  }
 });
 
 export default theme;
