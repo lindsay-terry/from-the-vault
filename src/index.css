@@ -1,13 +1,46 @@
 /* Color variables used throughout  */
 :root{
---chrysler-blue: #5F02CCff;
+/* --chrysler-blue: #5F02CCff;
 --black: #00000Aff;
 --medium-blue: #2500C4ff;
 --duke-blue: #00009Bff;
 --thistle: #E5D4FAff;
 --white: #FFFFFFff;
---magnolia: #F9F0FDff;
+--magnolia: #F9F0FDff; 
 --navy-blue: #000177ff;
---blue-violet: #8635EAff;
+--blue-violet: #8635EAff; */
 
+/* theme option  */
+/* --cornell-red: #b3001bff;
+--eerie-black: #262626ff;
+
+--tan: #ccad8fff; */
+
+/* theme option  */
+/* --maize: #fff07cff;
+--screamin-green: #80ff72ff;
+--electric-blue: #7ee8faff;
+--tea-rose-red: #eec0c6ff;
+--light-coral: #e58c8aff; */
+
+/* theme option  */
+--honeydew: #eaf2e3ff;
+--lapis-lazuli: #255c99ff;
+--vista-blue: #7ea3ccff;
+/* --fluorescent-cyan: #61e8e1ff; */
+--bittersweet: #f25757ff;
+/* --maize: #f2e863ff;
+--naples-yellow: #f2cd60ff; */
+--night: #171418ff;
+
+/* theme from profile pic  */
+
+/* --french-gray: #AFB8C3ff;
+--melon: #FAB8AAff;
+--onyx: #44444Dff;
+--salmon-pink: #F98E9Aff; */
 }
+
+/* using: magnolia, black, duke-blue  */
+
+/* like so far honeydew theme  */

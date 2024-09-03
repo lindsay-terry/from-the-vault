@@ -57,17 +57,17 @@ export default function ContactForm({ setContactView }) {
         <Container my={2}>
             <Form onSubmit={handleSubmit}>
                 <FormControl isInvalid={!!errors.name} mb={3}>
-                    <FormLabel color='var(--magnolia)'>Name:</FormLabel>
+                    <FormLabel color='var(--honeydew)'>Name:</FormLabel>
                     <Input type='text' value={formData.name} name='name' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.name}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.email} mb={3}>
-                    <FormLabel color='var(--magnolia)'>Email:</FormLabel>
+                    <FormLabel color='var(--honeydew)'>Email:</FormLabel>
                     <Input type='email' value={formData.email} name='email' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.email}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.message} mb={3}>
-                    <FormLabel color='var(--magnolia)' >Message:</FormLabel>
+                    <FormLabel color='var(--honeydew)' >Message:</FormLabel>
                     <Textarea placeholder="What can I do for you?" value={formData.message} name='message' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.message}</FormErrorMessage>
                 </FormControl>

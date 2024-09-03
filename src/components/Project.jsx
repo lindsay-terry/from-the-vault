@@ -13,7 +13,7 @@ export default function Project({projects, projectIndex}) {
             marginBottom: '10px',
         },
         customImg: {
-            boxShadow: '2px 2px 10px black',
+            boxShadow: '2px 2px 10px var(--night)',
             opacity: '100%',
         },
         customIcon: {
@@ -41,10 +41,10 @@ export default function Project({projects, projectIndex}) {
                     </Text>
                 </CardBody>
                 <CardFooter display='flex' justifyContent='space-evenly'>
-                        <Tooltip label='Github Repository' fontSize='sm' bg='var(--chrysler-blue)' color='var(--magnolia)' borderRadius='md'>
+                        <Tooltip label='Github Repository' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
                             <a href={project.githubLink} target='_blank' rel='noopener noreferrer'> <FaSquareGithub style={styles.customIcon}/> </a>
                         </Tooltip>
-                        <Tooltip label='Deployed Application' fontSize='sm' bg='var(--chrysler-blue)' color='var(--magnolia)' borderRadius='md'>
+                        <Tooltip label='Deployed Application' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
                             <a href={project.deployedLink} target='_blank' rel='noopener noreferrer'> <VscBrowser style={styles.customIcon}/> </a>
                         </Tooltip>
                 </CardFooter>

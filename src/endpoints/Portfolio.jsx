@@ -5,7 +5,7 @@ export default function Portfolio() {
 
     const styles = {
         customBackground: {
-            background: 'var(--black)',
+            background: 'var(--night)',
             opacity: '0.85',
             borderRadius: '30px'
         }

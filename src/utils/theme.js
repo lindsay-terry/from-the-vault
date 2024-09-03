@@ -6,8 +6,8 @@ const theme = extendTheme({
     global: {
       'html, body': {
         //background image
-        backgroundImage: 'url("./images/lamp.jpg")',
-        backgroundColor: 'var(--duke-blue)',
+        // backgroundImage: 'url("./images/cotton.jpg")',
+        backgroundColor: 'var(--honeydew)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
