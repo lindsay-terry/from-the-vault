@@ -7,6 +7,7 @@ export default function AboutDetails() {
             opacity: '0.85',
             borderRadius: '30px',
             color: 'var(--honeydew)',
+            boxShadow: '4px 4px 12px var(--night)',
         }
     }
     return (

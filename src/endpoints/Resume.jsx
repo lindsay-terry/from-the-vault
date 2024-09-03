@@ -10,7 +10,8 @@ export default function Resume() {
             background: 'var(--night)',
             opacity: '0.75',
             width: '100%',
-            borderRadius: '30px'
+            borderRadius: '30px',
+            boxShadow: '4px 4px 12px var(--night)',
         }
     }
     

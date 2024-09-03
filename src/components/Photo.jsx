@@ -3,7 +3,7 @@ import { Image } from '@chakra-ui/image';
 export default function Avatar() {
     const styles={
         image: {
-            boxShadow: '4px 4px 12px black',
+            boxShadow: '4px 4px 12px var(--night)',
             maxWidth: '500px'
         },
     }

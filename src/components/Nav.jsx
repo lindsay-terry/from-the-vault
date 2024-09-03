@@ -3,42 +3,37 @@ import { Tabs, TabList, Tab, Flex } from '@chakra-ui/react'
 
 export default function Nav() {
 
-    const styles = {
-        customBackground: {
-            background: 'var(--black)',
-            opacity: '0.55'
-        },
-
-        customLink: {
-            textDecoration: 'none',
-            color: 'var(--magnolia)',
-            fontWeight: 'bold',
-            fontSize: '24px',
-            fontFamily: 'Viga, sans-serif',
-        },
-    }
+    // const styles = {
+    //     customLink: {
+    //         textDecoration: 'none',
+    //         color: 'var(--magnolia)',
+    //         fontWeight: 'bold',
+    //         fontSize: '24px',
+    //         fontFamily: 'Viga, sans-serif',
+    //     },
+    // }
 
     return (
         <Tabs>
-            <TabList style={styles.customBackground}>
+            <TabList>
                 <Flex justify="space-evenly" p={3} w="100%">
                 <Tab>
-                    <Link to="/" style={styles.customLink} >
+                    <Link to="/"  >
                     About
                     </Link>
                 </Tab>
                 <Tab>
-                    <Link to="/portfolio" style={styles.customLink}>
+                    <Link to="/portfolio" >
                         Portfolio
                     </Link>
                 </Tab>
                 <Tab>
-                    <Link to="/contact" style={styles.customLink}>
+                    <Link to="/contact">
                         Contact Me
                     </Link>
                 </Tab>
                 <Tab>
-                    <Link to="/resume" style={styles.customLink}>
+                    <Link to="/resume">
                         Resume
                     </Link>
                 </Tab>

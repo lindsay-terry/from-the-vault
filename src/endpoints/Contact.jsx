@@ -7,7 +7,8 @@ export default function Contact() {
         customBackground: {
             background: 'var(--night)',
             opacity: '0.85',
-            borderRadius: '30px'
+            borderRadius: '30px',
+            boxShadow: '4px 4px 12px var(--night)',
         }
     }
 
