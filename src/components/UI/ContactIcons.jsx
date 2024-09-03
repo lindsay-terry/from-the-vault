@@ -6,7 +6,7 @@ export default function contactIcons() {
 
     const styles= {
         icon: {
-            color: 'var(--magnolia)',
+            color: 'var(--bittersweet)',
             fontSize: '30px',
         }
     }

@@ -1,13 +1,11 @@
 /* Color variables used throughout  */
 :root{
---chrysler-blue: #5F02CCff;
---black: #00000Aff;
---medium-blue: #2500C4ff;
---duke-blue: #00009Bff;
---thistle: #E5D4FAff;
---white: #FFFFFFff;
---magnolia: #F9F0FDff;
---navy-blue: #000177ff;
---blue-violet: #8635EAff;
-
+--honeydew: #eaf2e3ff;
+/* --lapis-lazuli: #255c99ff;
+--vista-blue: #7ea3ccff; */
+/* --fluorescent-cyan: #61e8e1ff; */
+--bittersweet: #f25757ff;
+/* --maize: #f2e863ff;
+--naples-yellow: #f2cd60ff; */
+--night: #171418ff;
 }

@@ -1,6 +1,6 @@
 import ContactIcons from './ContactIcons';
 import PropTypes from 'prop-types';
-import { Box, Button, Container, Flex, Card, CardHeader, CardBody, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Card, CardHeader, CardBody, Heading, Text, Avatar} from '@chakra-ui/react';
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -16,8 +16,9 @@ export default function ContactInfo({ setContactView }) {
             <Flex flexDirection='column' justifyContent='center' alignItems='center'>
                 <Container>
                     <Card variant='filled' size='sm' m='2'>
-                        <CardHeader>
+                        <CardHeader display='flex' justifyContent='space-evenly' alignItems='center'>
                             <Heading size='sm'>Contact Me</Heading>
+                            <Avatar src='/images/photo2.jpeg' />
                         </CardHeader>
                         <CardBody>
                             <Box display='flex'>

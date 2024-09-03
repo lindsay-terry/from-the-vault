@@ -1,19 +1,10 @@
 import { extendTheme } from '@chakra-ui/react';
-// import { Global } from '@emotion/react';
 
 const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-        //background image
-        backgroundImage: 'url("./images/lamp.jpg")',
-        backgroundColor: 'var(--duke-blue)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        height: '100%',
-        margin: 0,
+        backgroundColor: 'var(--honeydew)',
 
         // Font styles
         fontFamily: '"Oxygen", sans-serif',
@@ -21,6 +12,21 @@ const theme = extendTheme({
       },
     },
   },
+  components: {
+    Button: {
+      variants: {
+        ghost: {
+          _hover: {
+            bg: 'var(--bittersweet)',
+            color: 'var(--honeydew)',
+          },
+          _focus: {
+            bowShadow: 'outline',
+          }
+        }
+      }
+    }
+  }
 });
 
 export default theme;

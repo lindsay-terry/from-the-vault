@@ -1,49 +1,45 @@
-import { Link } from 'react-router-dom';
-import { Tabs, TabList, Tab, Flex } from '@chakra-ui/react'
+import { Link, useLocation } from 'react-router-dom';
+import { Box, Flex, Button } from '@chakra-ui/react';
+// import { useState, useEffect } from 'react';
+
 
 export default function Nav() {
+    const location = useLocation();
 
-    const styles = {
-        customBackground: {
-            background: 'var(--black)',
-            opacity: '0.55'
+    const styles={
+        activeLink: {
+            color: 'var(--bittersweet)'
         },
-
-        customLink: {
+        inactiveLink: {
             textDecoration: 'none',
-            color: 'var(--magnolia)',
-            fontWeight: 'bold',
-            fontSize: '24px',
-            fontFamily: 'Viga, sans-serif',
         },
     }
 
     return (
-        <Tabs>
-            <TabList style={styles.customBackground}>
-                <Flex justify="space-evenly" p={3} w="100%">
-                <Tab>
-                    <Link to="/" style={styles.customLink} >
-                    About
+        <Box p={3}>
+            <Flex justify="space-evenly" w="100%" direction={{ base: 'column', md: 'row'}}>
+                <Button variant='ghost' borderRadius='full'>
+                    <Link to="/" style={location.pathname === '/' ? styles.activeLink : styles.inactiveLink}>
+                        About
                     </Link>
-                </Tab>
-                <Tab>
-                    <Link to="/portfolio" style={styles.customLink}>
+                </Button>
+                <Button variant='ghost' borderRadius='full'>
+                    <Link to="/portfolio" style={location.pathname === '/portfolio' ? styles.activeLink : styles.inactiveLink}>
                         Portfolio
                     </Link>
-                </Tab>
-                <Tab>
-                    <Link to="/contact" style={styles.customLink}>
+                </Button>
+                <Button variant='ghost' borderRadius='full'>
+                    <Link to="/contact" style={location.pathname === '/contact' ? styles.activeLink : styles.inactiveLink}>
                         Contact Me
                     </Link>
-                </Tab>
-                <Tab>
-                    <Link to="/resume" style={styles.customLink}>
+                </Button>
+                <Button variant='ghost' borderRadius='full'>
+                    <Link to="/resume" style={location.pathname === '/resume' ? styles.activeLink : styles.inactiveLink}>
                         Resume
                     </Link>
-                </Tab>
-                </Flex>
-            </TabList>
-        </Tabs>
+                </Button>
+            </Flex>
+        </Box>
     );
   };
+

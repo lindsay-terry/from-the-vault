@@ -3,10 +3,11 @@ import { Container, Box, Text, Heading } from '@chakra-ui/react';
 export default function AboutDetails() {
     const styles={
         customBackground: {
-            background: 'var(--black)',
+            background: 'var(--night)',
             opacity: '0.85',
             borderRadius: '30px',
-            color: 'var(--white)',
+            color: 'var(--honeydew)',
+            boxShadow: '4px 4px 12px var(--night)',
         }
     }
     return (
