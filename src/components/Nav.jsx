@@ -1,7 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Box, Flex, Button } from '@chakra-ui/react';
-// import { useState, useEffect } from 'react';
-
 
 export default function Nav() {
     const location = useLocation();

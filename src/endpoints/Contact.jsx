@@ -14,7 +14,7 @@ export default function Contact() {
 
     return (
         <Container p={7} my={2} style={styles.customBackground}>
-            <ContactBox />
+            <ContactBox /> 
         </Container>
     );
 }

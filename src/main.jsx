@@ -12,7 +12,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider theme={theme}>
-        <RouterProvider router={router} bg/>
+        <RouterProvider router={router} />
     </ChakraProvider>
   </StrictMode>,
 )

@@ -13,6 +13,7 @@ const theme = extendTheme({
     },
   },
   components: {
+    // Custom styling for button elements with ghost variant (Nav component)
     Button: {
       variants: {
         ghost: {
@@ -21,7 +22,7 @@ const theme = extendTheme({
             color: 'var(--honeydew)',
           },
           _focus: {
-            bowShadow: 'outline',
+            boxShadow: 'outline',
           }
         }
       }
