@@ -48,6 +48,7 @@ export default function Resume() {
                 <SimpleGrid columns={{sm: 1, md:2}} m={2}>
                 {/* Applying animation to container  */}
                     <motion.div initial={'hidden'} animate='visible' variants={containerVariants}>
+                        {/* List of skills  */}
                         <List m={3} p={2}>
                             {[
                                 'JavaScript', 'React', 'HTML/CSS', 'PostgreSQL/Sequelize', 'MongoDB/Mongoose', 'Node.js', 'Express.js', 'Git',
@@ -61,7 +62,8 @@ export default function Resume() {
                             ))}
                         </List>
                     </motion.div>
-                    <Button m={3} p={2}>
+                    {/* Download resume button  */}
+                    <Button m={3} p={2} aria-label='Download CV'>
                         <a  href={Lindsay_Terry_Junior_Developer_Resume} download='Lindsay_Terry_Resume' >Download CV</a>
                     </Button>
                 </SimpleGrid>
