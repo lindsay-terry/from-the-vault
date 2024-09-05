@@ -21,9 +21,9 @@ const theme = extendTheme({
             bg: 'var(--bittersweet)',
             color: 'var(--honeydew)',
           },
-          _focus: {
-            boxShadow: 'outline',
-          }
+          // _focus: {
+          //   boxShadow: 'outline',
+          // }
         }
       }
     }

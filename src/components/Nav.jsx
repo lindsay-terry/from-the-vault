@@ -16,25 +16,17 @@ export default function Nav() {
     return (
         <Box p={3}>
             <Flex justify="space-evenly" w="100%" direction={{ base: 'column', md: 'row'}}>
-                <Button variant='ghost' borderRadius='full'>
-                    <Link to="/" style={location.pathname === '/' ? styles.activeLink : styles.inactiveLink}>
-                        About
-                    </Link>
+                <Button variant='ghost' borderRadius='full' as={Link} to='/' style={location.pathname === '/' ? styles.activeLink : styles.inactiveLink}>
+                    About
                 </Button>
-                <Button variant='ghost' borderRadius='full'>
-                    <Link to="/portfolio" style={location.pathname === '/portfolio' ? styles.activeLink : styles.inactiveLink}>
-                        Portfolio
-                    </Link>
+                <Button variant='ghost' borderRadius='full' as={Link} to='/portfolio' style={location.pathname === '/portfolio' ? styles.activeLink : styles.inactiveLink}>
+                    Portfolio
                 </Button>
-                <Button variant='ghost' borderRadius='full'>
-                    <Link to="/contact" style={location.pathname === '/contact' ? styles.activeLink : styles.inactiveLink}>
-                        Contact Me
-                    </Link>
+                <Button variant='ghost' borderRadius='full' as={Link} to='/contact' style={location.pathname === '/contact' ? styles.activeLink : styles.inactiveLink}>
+                    Contact Me
                 </Button>
-                <Button variant='ghost' borderRadius='full'>
-                    <Link to="/resume" style={location.pathname === '/resume' ? styles.activeLink : styles.inactiveLink}>
-                        Resume
-                    </Link>
+                <Button variant='ghost' borderRadius='full' as={Link} to='/resume' style={location.pathname === '/resume' ? styles.activeLink : styles.inactiveLink}>
+                    Resume
                 </Button>
             </Flex>
         </Box>
