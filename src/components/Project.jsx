@@ -47,7 +47,7 @@ export default function Project({projects, projectIndex}) {
                         <Tooltip label='Github Repository' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
                             <a href={project.githubLink} target='_blank' rel='noopener noreferrer'> <FaSquareGithub style={styles.customIcon}/> </a>
                         </Tooltip>
-                        <Tooltip label='Deployed Application' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
+                        <Tooltip label='Live Demo' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
                             <a href={project.deployedLink} target='_blank' rel='noopener noreferrer'> <VscBrowser style={styles.customIcon}/> </a>
                         </Tooltip>
                 </CardFooter>

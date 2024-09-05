@@ -1,5 +1,5 @@
 import Photo from '../components/Photo';
-import AboutDetails from '../components/UI/AboutDetails';
+import AboutDetails from '../components/AboutDetails';
 import { Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 

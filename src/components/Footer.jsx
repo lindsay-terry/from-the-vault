@@ -1,4 +1,4 @@
-import ContactIcons from './UI/ContactIcons';
+import ContactIcons from './ContactIcons';
 
 export default function Footer() {
 

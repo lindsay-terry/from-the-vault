@@ -1,4 +1,4 @@
-import Carousel from '../components/UI/Carousel';
+import Carousel from '../components/Carousel';
 import { Container } from '@chakra-ui/react';
 
 export default function Portfolio() {
