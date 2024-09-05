@@ -1,4 +1,4 @@
-import Project from '../Project';
+import Project from './Project';
 import { Button, Flex } from '@chakra-ui/react';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { useState } from 'react';

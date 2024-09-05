@@ -1,5 +1,5 @@
-import ContactForm from './UI/ContactForm';
-import ContactInfo from './UI/ContactInfo';
+import ContactForm from './ContactForm';
+import ContactInfo from './ContactInfo';
 import { useState } from 'react';
 
 export default function ContactBox() {

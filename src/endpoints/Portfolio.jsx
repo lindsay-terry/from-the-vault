@@ -1,4 +1,4 @@
-import Carousel from '../components/UI/Carousel';
+import Carousel from '../components/Carousel';
 import { Container } from '@chakra-ui/react';
 
 export default function Portfolio() {
@@ -31,7 +31,7 @@ export default function Portfolio() {
         {
             projectTitle: "What's for Dinner?",
             imageSrc: '/images/whatsfordinner.png',
-            projectDescription: 'A front-end application using two server-side APIs to generate meal and drink recipes.  Utilizes local storage to save and delete saved meal and drink recipes..',
+            projectDescription: 'A front-end application using two server-side APIs to generate meal and drink recipes.  Utilizes local storage to save and delete saved meal and drink recipes.',
             githubLink: 'https://github.com/lindsay-terry/whats-for-dinner',
             deployedLink : 'https://lindsay-terry.github.io/whats-for-dinner/',
         }

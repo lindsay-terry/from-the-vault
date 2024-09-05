@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub, faLinkedin, faHackerrank } from '@fortawesome/free-brands-svg-icons'
 import { Flex, Box } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 export default function contactIcons() {
 
@@ -16,17 +17,23 @@ export default function contactIcons() {
         <Flex justify="center">
             <Box m={1}>
                 <a href="https://github.com/lindsay-terry" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+                    <motion.div whileHover={{ scale: 1.5 }}>
                     <FontAwesomeIcon icon={faSquareGithub} />
+                    </motion.div>
                 </a>
             </Box>
             <Box m={1}>
                 <a href="https://www.linkedin.com/in/lindsay-terry/" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+                    <motion.div whileHover={{ scale: 1.5 }}>
                     <FontAwesomeIcon icon={faLinkedin} />
+                    </motion.div>
                 </a>
             </Box>
             <Box m={1}>
                 <a href="https://www.hackerrank.com/profile/lindsaytee66" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+                    <motion.div whileHover={{ scale: 1.5 }}>
                     <FontAwesomeIcon icon={faHackerrank} />
+                    </motion.div>
                 </a>
             </Box>
         </Flex>
