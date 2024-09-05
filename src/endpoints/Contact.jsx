@@ -2,7 +2,7 @@ import ContactBox from '../components/ContactBox';
 import { Container } from '@chakra-ui/react';
 
 export default function Contact() {
-
+    // Background container for contact components
     const styles = {
         customBackground: {
             background: 'var(--night)',

@@ -58,22 +58,22 @@ export default function ContactForm({ setContactView }) {
             <Form onSubmit={handleSubmit}>
                 <FormControl isInvalid={!!errors.name} mb={3}>
                     <FormLabel color='var(--honeydew)'>Name:</FormLabel>
-                    <Input type='text' value={formData.name} name='name' onChange={handleChange} background/>
+                    <Input type='text' value={formData.name} name='name' aria-label='Name' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.name}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.email} mb={3}>
                     <FormLabel color='var(--honeydew)'>Email:</FormLabel>
-                    <Input type='email' value={formData.email} name='email' onChange={handleChange} background/>
+                    <Input type='email' value={formData.email} name='email' aria-label='Email' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.email}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.message} mb={3}>
                     <FormLabel color='var(--honeydew)' >Message:</FormLabel>
-                    <Textarea placeholder="What can I do for you?" value={formData.message} name='message' onChange={handleChange} background/>
+                    <Textarea placeholder="What can I do for you?" value={formData.message} name='message' aria-label='Enter message' onChange={handleChange} background/>
                     <FormErrorMessage>{errors.message}</FormErrorMessage>
                 </FormControl>
                 <Grid templateColumns='repeat(2, 1fr)' gap={3}>
-                    <Button type='submit'>Submit</Button>
-                    <Button onClick={changeView}>See My Info</Button>
+                    <Button type='submit' aria-label='Submit form'>Submit</Button>
+                    <Button onClick={changeView} aria-label='Back to contact info'>See My Info</Button>
                 </Grid>
             </Form>
         </Container>

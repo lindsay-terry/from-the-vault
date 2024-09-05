@@ -27,10 +27,10 @@ export default function Carousel({projects}) {
 
     return (
         <Flex justify='space-between' align='center'>
-            <Button onClick={toggleLeft} mx={1}> <SlArrowLeft /> </Button>
+            <Button onClick={toggleLeft} mx={1} aria-label='Previous project'> <SlArrowLeft /> </Button>
                 {/* Pass projects and projectIndex state variable to Project component */}
                 <Project projects={projects} projectIndex={projectIndex}/>
-            <Button onClick={toggleRight} mx={1}> <SlArrowRight /> </Button>
+            <Button onClick={toggleRight} mx={1} aria-label='Next project'> <SlArrowRight /> </Button>
         </Flex>
     );
 };

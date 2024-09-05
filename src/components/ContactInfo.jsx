@@ -33,7 +33,7 @@ export default function ContactInfo({ setContactView }) {
                     </Card>
                 </Container>
                 <ContactIcons />
-                <Button onClick={changeView}>Send a Message</Button>
+                <Button onClick={changeView} aria-label='View message form'>Send a Message</Button>
             </Flex>
         </Box>
         
