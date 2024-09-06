@@ -3,7 +3,7 @@ import { Flex,Container, Heading, Text } from '@chakra-ui/react';
 import TechStacks from '../components/TechStacks';
 // import Lindsay_Terry_Junior_Developer_Resume from '../assets/Lindsay_Terry_Junior_Developer_Resume.pdf'
 // import { FaCircleCheck } from "react-icons/fa6";
-// import { motion } from 'framer-motion';
+
 
 
 export default function Resume() {
@@ -18,28 +18,7 @@ export default function Resume() {
         }
     }
 
-    // Animation variants for skills list
-    // const listVariants = {
-    //     hidden: {
-    //       opacity: 0,
-    //       y: 20,
-    //     },
-    //     visible: {
-    //       opacity: 1,
-    //       y: 0,
-    //       transition: {
-    //         duration: 0.5,
-    //       },
-    //     },
-    //   };
-      
-    //   const containerVariants = {
-    //     visible: {
-    //       transition: {
-    //         staggerChildren: 0.3, // Stagger each item by 0.3 seconds
-    //       },
-    //     },
-    //   };
+
     
     return (
         <Container display='flex' justifyContent='center' style={styles.background}>
@@ -48,7 +27,7 @@ export default function Resume() {
                     <Heading color='var(--honeydew)' size='md' m={3} p={3}>Frontend Developer with Full-Stack Experience</Heading>
                 </div>
             <TechStacks />
-            <Text color='var(--honeydew)'>Icons by <a href='https://icons8.com'>Icons8</a></Text>
+            <Text color='var(--honeydew)'>Icons by <a href='https://icons8.com/'>icons8</a></Text>
             </Flex>
             
          </Container>
