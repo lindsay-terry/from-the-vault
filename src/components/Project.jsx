@@ -10,7 +10,7 @@ export default function Project({projects, projectIndex}) {
         imageContainer: {
             width: '100%',
             maxWidth: '400px',
-            height: '200px',
+            // height: '200px',
             marginBottom: '10px',
         },
         customImg: {
