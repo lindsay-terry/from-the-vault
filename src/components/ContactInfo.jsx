@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Box, Button, Container, Flex, Card, CardHeader, CardBody, Heading, Text, Avatar} from '@chakra-ui/react';
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import photo2 from '../assets/images/photo2.jpeg';
 
 export default function ContactInfo({ setContactView }) {
 
@@ -18,7 +19,7 @@ export default function ContactInfo({ setContactView }) {
                     <Card variant='filled' size='sm' m='2'>
                         <CardHeader display='flex' justifyContent='space-evenly' alignItems='center'>
                             <Heading size='sm'>Contact Me</Heading>
-                            <Avatar src='/images/photo2.jpeg' />
+                            <Avatar src={photo2} alt='avatar image of Lindsay Terry'/>
                         </CardHeader>
                         <CardBody>
                             <Box display='flex'>
