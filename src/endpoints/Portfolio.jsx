@@ -26,7 +26,7 @@ export default function Portfolio() {
             imageSrc: stockness, 
             projectDescription: 'An inventory and small business management application utilizing Handlebars.js for templating, Express.js for routing, and Sequelize to connect with a PostgreSQL database.',
             githubLink: 'https://github.com/lindsay-terry/stock-ness-monster',
-            deployedLink : '#',
+            deployedLink : 'https://stock-ness-monster-production.up.railway.app/',
         },
         {
             projectTitle: 'Blog City Tech',
