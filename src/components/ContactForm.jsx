@@ -67,11 +67,18 @@ export default function ContactForm({ setContactView }) {
         setContactView('contactInfo')
     }
 
+    // Check for a valid email address
+    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
     // Validate form elements to ensure they are filled out on submit
     const handleValidate = () => {
         const newError = {};
         if (!formData.name) newError.name = 'Name is required';
-        if (!formData.email) newError.email = 'Email is required';
+        if (!formData.email) {
+            newError.email = 'Email is required';
+        } else if (!emailRegex.test(formData.email)) {
+            newError.email = 'Invalid email address';
+        }
         if (!formData.message) newError.message = 'Message is required';
         setError(newError);
         
