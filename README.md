@@ -29,7 +29,7 @@ This project is operating under the MIT license.  For more detailed information,
 See my contact information to get in touch with me.
 
 ## Credits
-Tech icons by [Icons8](https://icons8.com)
+Tech icons by [icons8](https://icons8.com/)
 
 ## Tests
 To run tests for the application:
