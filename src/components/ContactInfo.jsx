@@ -4,6 +4,7 @@ import { Box, Button, Container, Flex, Card, CardHeader, CardBody, Heading, Text
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import photo2 from '../assets/images/photo2.jpeg';
+import { motion } from 'framer-motion';
 
 export default function ContactInfo({ setContactView }) {
 
@@ -16,25 +17,27 @@ export default function ContactInfo({ setContactView }) {
         <Box>
             <Flex flexDirection='column' justifyContent='center' alignItems='center'>
                 <Container>
-                    <Card variant='filled' size='sm' m='2'>
+                    <Card variant='filled' size='md' m='2'>
                         <CardHeader display='flex' justifyContent='space-evenly' alignItems='center'>
-                            <Heading size='sm'>Contact Me</Heading>
-                            <Avatar src={photo2} alt='avatar image of Lindsay Terry'/>
+                            <Heading size='lg'>Contact Me</Heading>
+                            <Avatar src={photo2} size='lg' alt='avatar image of Lindsay Terry'/>
                         </CardHeader>
                         <CardBody>
                             <Box display='flex'>
-                                <Heading size='xs'><FaPhone /></Heading>
-                                <Text p='2' fontSize='sm'>801-652-2807</Text>
+                                <Heading size='md'><FaPhone /></Heading>
+                                <Text p='2' fontSize='lg'>801-652-2807</Text>
                             </Box>
                             <Box display='flex'>
-                                <Heading size='xs'><MdEmail /></Heading>
-                                <Text p='2' fontSize='sm'>lindsaytee66@gmail.com</Text>
+                                <Heading size='md'><MdEmail /></Heading>
+                                <Text p='2' fontSize='lg'>lindsaytee66@gmail.com</Text>
                             </Box>
                         </CardBody>
                     </Card>
                 </Container>
                 <ContactIcons />
-                <Button onClick={changeView} aria-label='View message form'>Send a Message</Button>
+                <motion.div whileHover={{ scale: 1.2 }}>
+                    <Button onClick={changeView} style={{background: 'var(--jade)', color: 'var(--seasalt)'}} aria-label='View message form'>Send a Message</Button>
+                </motion.div>
             </Flex>
         </Box>
         

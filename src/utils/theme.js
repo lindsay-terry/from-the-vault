@@ -4,7 +4,7 @@ const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-        backgroundColor: 'var(--honeydew)',
+        backgroundColor: 'var(--snow)',
 
         // Font styles
         fontFamily: '"Oxygen", sans-serif',
@@ -18,12 +18,11 @@ const theme = extendTheme({
       variants: {
         ghost: {
           _hover: {
-            bg: 'var(--bittersweet)',
-            color: 'var(--honeydew)',
+            bg: 'var(--jade)',
+            color: 'var(--seasalt)',
+            boxShadow: '0 1px 6px var(--black-olive)'
+
           },
-          // _focus: {
-          //   boxShadow: 'outline',
-          // }
         }
       }
     }

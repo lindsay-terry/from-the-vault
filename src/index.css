@@ -1,11 +1,9 @@
 /* Color variables used throughout  */
 :root{
---honeydew: #eaf2e3ff;
-/* --lapis-lazuli: #255c99ff;
---vista-blue: #7ea3ccff; */
-/* --fluorescent-cyan: #61e8e1ff; */
---bittersweet: #f25757ff;
-/* --maize: #f2e863ff;
---naples-yellow: #f2cd60ff; */
 --night: #171418ff;
+--snow: #f6efeeff;
+--seasalt: #f9f8f8;
+--jade: #0ead69ff;
+--black-olive: #363732ff;
+--indigo: #540d6eff;
 }

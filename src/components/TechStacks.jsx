@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function TechStacks() {
+    // useState skill to display names of hovered icons
     const [skill, setSkill] = useState('');
-
+    // Array of icons to display each skill
     const icons = [
         {
             iconTitle: 'JavaScript',
@@ -63,7 +64,7 @@ export default function TechStacks() {
 
       const skillHolder = {
             textBox: {
-                color: 'var(--honeydew)',
+                color: 'var(--seasalt)',
                 minHeight: '50px',
                 display: 'flex',
                 justifyContent: 'center',
@@ -78,11 +79,12 @@ export default function TechStacks() {
             <Box >
                 <motion.div display='flex' flexDirection='row' initial={'hidden'} animate='visible' variants={containerVariants}>
                     <Box display='flex' justifyContent='space-evenly'>
+                      {/* Map through icon list to display all icons and use skill state to display skill name above  */}
                     {icons.map((icon) => (
-                            <motion.img key={icon.iconTitle} src={icon.imageSrc} variants={listVariants} alt={icon.iconDescription}
-                                        whileHover={{ scale: 1.5 }}
-                                        onMouseEnter={() => setSkill(icon.iconTitle)}
-                                        onMouseLeave={() => setSkill('')}/>
+                        <motion.img key={icon.iconTitle} src={icon.imageSrc} variants={listVariants} alt={icon.iconDescription}
+                                    whileHover={{ scale: 1.5 }}
+                                    onMouseEnter={() => setSkill(icon.iconTitle)}
+                                    onMouseLeave={() => setSkill('')}/>
                     ))}
                     </Box>
                 </motion.div>

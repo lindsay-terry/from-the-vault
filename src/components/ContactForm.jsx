@@ -2,6 +2,7 @@ import { FormControl, FormLabel, FormErrorMessage, Input, Textarea, Container, B
 import { Form } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function ContactForm({ setContactView }) {
     // Initializing useToast hook from Chakra UI
@@ -96,23 +97,27 @@ export default function ContactForm({ setContactView }) {
         <Container my={2}>
             <Form onSubmit={handleSubmit}>
                 <FormControl isInvalid={!!errors.name} mb={3}>
-                    <FormLabel color='var(--honeydew)'>Name:</FormLabel>
+                    <FormLabel color='var(--seasalt)'>Name:</FormLabel>
                     <Input type='text' value={formData.name} name='name' aria-label='Name' onChange={handleChange} onBlur={handleBlur} background/>
                     <FormErrorMessage>{errors.name}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.email} mb={3}>
-                    <FormLabel color='var(--honeydew)'>Email:</FormLabel>
+                    <FormLabel color='var(--seasalt)'>Email:</FormLabel>
                     <Input type='email' value={formData.email} name='email' aria-label='Email' onChange={handleChange} onBlur={handleBlur} background/>
                     <FormErrorMessage>{errors.email}</FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={!!errors.message} mb={3}>
-                    <FormLabel color='var(--honeydew)' >Message:</FormLabel>
+                    <FormLabel color='var(--seasalt)' >Message:</FormLabel>
                     <Textarea placeholder="What can I do for you?" value={formData.message} name='message' aria-label='Enter message' onChange={handleChange} onBlur={handleBlur} background/>
                     <FormErrorMessage>{errors.message}</FormErrorMessage>
                 </FormControl>
-                <Grid templateColumns='repeat(2, 1fr)' gap={3}>
-                    <Button type='submit' aria-label='Submit form'>Submit</Button>
-                    <Button onClick={changeView} aria-label='Back to contact info'>See My Info</Button>
+                <Grid templateColumns='repeat(2, 1fr)' gap={3} display='flex' justifyContent='space-evenly'>
+                    <motion.div whileHover={{ scale: 1.2 }}>
+                        <Button style={{background: 'var(--jade)', color: 'var(--seasalt)'}} type='submit' aria-label='Submit form'>Submit</Button>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.2 }}>
+                        <Button style={{background: 'var(--jade)', color: 'var(--seasalt)'}} onClick={changeView} aria-label='Back to contact info'>See My Info</Button>
+                    </motion.div>
                 </Grid>
             </Form>
         </Container>

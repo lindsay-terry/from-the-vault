@@ -3,7 +3,6 @@ import ContactInfo from './ContactInfo';
 import { useState } from 'react';
 
 export default function ContactBox() {
-
     const [contactView, setContactView] = useState('contactInfo');
 
     return (

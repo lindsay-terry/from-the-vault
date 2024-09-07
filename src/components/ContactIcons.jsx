@@ -4,10 +4,10 @@ import { Flex, Box } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 export default function contactIcons() {
-
+    // Custom color and size for contact Icons
     const styles= {
         icon: {
-            color: 'var(--bittersweet)',
+            color: 'var(--jade)',
             fontSize: '30px',
         }
     }

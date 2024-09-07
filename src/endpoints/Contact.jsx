@@ -6,9 +6,9 @@ export default function Contact() {
     const styles = {
         customBackground: {
             background: 'var(--night)',
-            opacity: '0.85',
+            opacity: '0.95',
             borderRadius: '30px',
-            boxShadow: '4px 4px 12px var(--night)',
+            boxShadow: '0 4px 12px var(--night)',
         }
     }
 
