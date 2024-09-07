@@ -66,7 +66,9 @@ export default function TechStacks() {
                 color: 'var(--honeydew)',
                 minHeight: '50px',
                 display: 'flex',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                fontSize: "20px",
+                fontWeight: 'bold'
             }
       }
 
@@ -77,7 +79,7 @@ export default function TechStacks() {
                 <motion.div display='flex' flexDirection='row' initial={'hidden'} animate='visible' variants={containerVariants}>
                     <Box display='flex' justifyContent='space-evenly'>
                     {icons.map((icon) => (
-                            <motion.img key={icon.iconTitle} src={icon.imageSrc} variants={listVariants}
+                            <motion.img key={icon.iconTitle} src={icon.imageSrc} variants={listVariants} alt={icon.iconDescription}
                                         whileHover={{ scale: 1.5 }}
                                         onMouseEnter={() => setSkill(icon.iconTitle)}
                                         onMouseLeave={() => setSkill('')}/>
