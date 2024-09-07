@@ -1,1 +1,9 @@
-
+/* Color variables used throughout  */
+:root{
+--night: #171418ff;
+--snow: #f6efeeff;
+--seasalt: #f9f8f8;
+--jade: #0ead69ff;
+--black-olive: #363732ff;
+--indigo: #540d6eff;
+}
