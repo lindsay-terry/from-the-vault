@@ -4,10 +4,10 @@ export default function AboutDetails() {
     const styles={
         customBackground: {
             background: 'var(--night)',
-            opacity: '0.85',
+            opacity: '0.95',
             borderRadius: '30px',
-            color: 'var(--honeydew)',
-            boxShadow: '4px 4px 12px var(--night)',
+            color: 'var(--seasalt)',
+            boxShadow: '0 4px 12px var(--night)',
         }
     }
     return (

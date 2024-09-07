@@ -5,21 +5,27 @@ import { VscBrowser } from "react-icons/vsc";
 import { motion } from 'framer-motion';
 
 export default function Project({projects, projectIndex}) {
-    
+    // Styles project container for consistent size across all projects
     const styles = {
         imageContainer: {
             width: '100%',
             maxWidth: '400px',
-            // height: '200px',
+            minHeight: '200px',
             marginBottom: '10px',
+            display: 'flex',
+            justifyContent: 'center',
         },
         customImg: {
             boxShadow: '2px 2px 10px var(--night)',
             opacity: '100%',
+            maxHeight: '200px',
         },
         customIcon: {
             fontSize: '30px'
         },
+        customText: {
+            minHeight: '150px',
+        }
     }
 
     // Use props to determine which project to display
@@ -34,21 +40,21 @@ export default function Project({projects, projectIndex}) {
                 <CardBody>
                     <Box style={styles.imageContainer}>
                         <a href={project.deployedLink} target='_blank' rel='noopener noreferrer'>
-                            <motion.div whileHover={{ scale: 1.1 }}>
+                            <motion.div whileHover={{ scale: 1.1 }} >
                             <Image src={project.imageSrc} alt={`Screenshot of ${project.projectTitle}`} borderRadius='lg' style={styles.customImg}/>
                             </motion.div>
                         </a>
                     </Box>
-                    <Text>
+                    <Text style={styles.customText} p={1}>
                         {project.projectDescription}
                     </Text>
                 </CardBody>
                 <CardFooter display='flex' justifyContent='space-evenly'>
-                    <Tooltip label='Github Repository' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
-                        <a href={project.githubLink} target='_blank' rel='noopener noreferrer'> <FaSquareGithub style={styles.customIcon} alt='Github icon'/> </a>
+                    <Tooltip label='Github Repository' fontSize='sm' bg='var(--jade)' color='var(--snow)' borderRadius='md'>
+                        <motion.a whileHover={{ scale: 1.4 }} href={project.githubLink} target='_blank' rel='noopener noreferrer'> <FaSquareGithub style={styles.customIcon} alt='Github icon'/> </motion.a>
                     </Tooltip>
-                    <Tooltip label='Live Demo' fontSize='sm' bg='var(--bittersweet)' color='var(--honeydew)' borderRadius='md'>
-                        <a href={project.deployedLink} target='_blank' rel='noopener noreferrer'> <VscBrowser style={styles.customIcon} alt='Browser icon'/> </a>
+                    <Tooltip label='Live Demo' fontSize='sm' bg='var(--jade)' color='var(--snow)' borderRadius='md'>
+                        <motion.a whileHover={{ scale: 1.4 }} href={project.deployedLink} target='_blank' rel='noopener noreferrer'> <VscBrowser style={styles.customIcon} alt='Browser icon'/> </motion.a>
                     </Tooltip>
                 </CardFooter>
             </Card>
