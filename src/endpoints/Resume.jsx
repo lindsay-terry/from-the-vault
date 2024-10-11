@@ -1,6 +1,6 @@
 import { Flex,Container, Heading, Text, Button, Box } from '@chakra-ui/react';
 import TechStacks from '../components/TechStacks';
-import Lindsay_Terry_Junior_Developer_Resume from '../assets/Lindsay_Terry_Junior_Developer_Resume.pdf'
+import Lindsay_Terry_Software_Engineer_1 from '../assets/Lindsay_Terry_Software_Engineer_1.pdf';
 import { motion } from 'framer-motion';
 
 export default function Resume() {
@@ -31,7 +31,7 @@ export default function Resume() {
                     {/* Download resume button  */}
                     <motion.div whileHover={{ scale: 1.2 }}>
                     <Button style={styles.customButton} m={3} p={2} aria-label='Download CV'>
-                        <a  href={Lindsay_Terry_Junior_Developer_Resume} download='Lindsay_Terry_Resume' >Download CV</a>
+                        <a  href={Lindsay_Terry_Software_Engineer_1} download='Lindsay_Terry_Resume' >Download CV</a>
                     </Button>
                     </motion.div>
                 </Box>
