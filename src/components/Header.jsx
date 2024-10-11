@@ -6,6 +6,7 @@ export default function Header() {
     const styles = {
         customHeader: {
             fontFamily: 'Passion One, sans-serif',
+            color: 'var(--seasalt)'
         }
     };
 

@@ -6,12 +6,13 @@ export default function Nav() {
     // Styles for links based on active or not
     const styles={
         activeLink: {
-            color: 'var(--indigo)',
+            color: 'var(--jade)',
             fontSize: '32px'
         },
         inactiveLink: {
             textDecoration: 'none',
-            fontSize: '24px'
+            fontSize: '24px',
+            color: 'var(--seasalt)'
         },
     } 
 
