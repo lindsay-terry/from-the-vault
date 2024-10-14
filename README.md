@@ -1,4 +1,6 @@
 # from-the-vault
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a907369a-0e9f-49a1-96dd-2b355a7b40cc/deploy-status)](https://app.netlify.com/sites/lindsay-terry-portfolio/deploys)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
