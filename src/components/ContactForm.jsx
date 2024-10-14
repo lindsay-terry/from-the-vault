@@ -3,6 +3,7 @@ import { Form } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 export default function ContactForm({ setContactView }) {
     // Initializing useToast hook from Chakra UI
@@ -68,6 +69,7 @@ export default function ContactForm({ setContactView }) {
     }
 
     // Check for a valid email address
+    // eslint-disable-next-line no-useless-escape
     const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
     // Validate form elements to ensure they are filled out on submit
@@ -90,6 +92,15 @@ export default function ContactForm({ setContactView }) {
         event.preventDefault();
         if (handleValidate()) {
             console.log('Form submitted:', formData);
+
+            const templateParams = {
+                from_name: formData.name,
+                reply_to: formData.email,
+                message: formData.message,
+              };
+
+            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_USER_ID);
+
             toast({
                 title: 'Form submitted successfully!',
                 status: 'success',
